@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="###容易忽略的问题1.单行注释//2.多行注释/**/3.如果在一对script标签中有一行代码出错了,那么这对script标签中,这行代码后面的代码不会执行,但是在后面的script标签中的代码不会有影响4.undefined==null
+###javaScrip组成1.ECscript2.Bo">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Hexo"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2017/12/15/js高级-总结js/">
+                Untitled
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-12-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>###容易忽略的问题<br>1.单行注释//<br>2.多行注释/**/<br>3.如果在一对script标签中有一行代码出错了,那么这对script标签中,这行代码后面的代码不会执行,但是在后面的script标签中的代码不会有影响<br>4.undefined==null</p>
+<p>###javaScrip组成<br>1.ECscript<br>2.Bom<br>3.Dom</p>
+<p>###变量<br>1.变量是存储数据的空间，本身并没有数据类型<br>2.使用var关键字声明的变量都具有变量声明提升的特性<br>3.变量不会提升的情况<br>    1.var a=b=c=100;<br>    b,c 隐式全局变量  所以不会变量提升<br>    var  a=100;  b=c=a<br>    2.函数内部  只有函数执行时，才会产生隐式全局变量<br>    function(){<br>      age=100;<br>    }<br>    console.log(age); 所以会报错<br>    3.给Windows对象添加某个属性，会产生一个全局变量，但是不会变量声明提升<br>    window.gender=’女’<br>4.两个数值交换的三种方式：<br>  1.定义第三个变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var temp =num1;</span><br><span class="line">num1=num2;</span><br><span class="line"> num2=temp;</span><br></pre></td></tr></table></figure></p>
+<p>  2.加减法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num1=num1+num2;</span><br><span class="line">num2=num1-num2;</span><br><span class="line">num1=num1-num2;</span><br></pre></td></tr></table></figure></p>
+<p> 3.位运算<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num1=num1^num2;</span><br><span class="line">num2=num1^num2;</span><br><span class="line">num1=num1^num2;</span><br></pre></td></tr></table></figure></p>
+<p>###数据类型<br>1.基本数据类型 （值类型）<br>  数字 nan<br>  字符串<br>  布尔值<br>  null<br>  undefined<br>复杂数据类型（引用类型）<br>    对象<br>        （数组 正则 字面量 内置函数）<br>        函数<br>2.数据类型的判断<br>    typeof null  “object”<br>    typeof  function(){}    “function”<br>3.判断是不是对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if(typeof obj ===&quot;object&quot; &amp;&amp; obj!=null)&#123;return true&#125;</span><br><span class="line">if(typeof obj===&quot;function&quot;)&#123;return true;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>简化<br>return (typeof obj ===”object” &amp;&amp; obj!=null) || (typeof obj===”function”)<br>4.数据类型转换<br>    转换成数字<br>        Number()<br>        parseInt()<br>        parseFloat()<br>        “100”-0  调用Number方法<br>        isNaN() 检测一个数据是不是nan<br>        NaN==NaN false<br>    转换为字符串<br>        .toString（）<br>        String()  调用了.toString（）<br>        “”拼接</p>
+<p>###运算符<br>算术运算符<br>    var num=100;<br>    console.log(num++)；//100<br>    console.log(++num)；//102<br>逻辑运算符<br>    &amp;&amp;<br>        运算符左边是真，返回右边的值<br>        运算符左边是假，返回左边的值<br>        var a=null&amp;&amp; 100//null<br>        var b=100&amp;&amp;null//null<br>    ||<br>        运算符左边是真,返回左边的值<br>        运算符左边是假,返回右边的值<br>    真值：[]{}<br>    假值：0 “” null undefined false nan<br>    !<br>三元运算符<br>    var h=3?5:10;<br>比较运算符<br>    ===  首先判断是否属于同一种数据类型，<br>        如果不是，直接返回false,<br>        如果是，判断他们的值是否相等<br>            如果为两个对象类型，判断指向是不是同样的内存地址</p>
+<pre><code>        String===String  true
+== 
+1==“1” 将字符串转化为数字  Number()
+1==true 将Number函数转化为数字 Number()
+        true:1 false:0
+        1==true true
+        3==true false
+null==undefined true
+对象和字符串：调用对象的toString方法转化为字符串（基本包装类型的调用valueof方法）
+    {}.toString()=[object Object]
+    []==0 true
+    []==![] true  []==0 0==0
+</code></pre><p>赋值运算符    </p>
+<p>###数组<br>1.声明<br>    var arr=[];//空数组，以字面量的方式<br>    var arr=new Array();//空数组，以构造函数的方式<br>    var arr=new Array(5);//数组长度为5<br>    var arr=new Array(1,2,3);<br>2.注意：   arr[arr.length]的用法：动态的改变数组的长度。<br>        arguments对象：可以看成一个数组使用，查看传入了几个参数 arguments.length来获取在调用这个函数时传入了几个参数<br>3.冒泡排序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var arr=[,2,6,3];</span><br><span class="line"> for(var i=0;i&lt;arr.length-1;i++)&#123;</span><br><span class="line">        for(var j=0;j&lt;arr.length-1-i;j++)&#123;</span><br><span class="line">           if(arr[j]&gt;arr[j+1])&#123;</span><br><span class="line">                var temp=arr[j];</span><br><span class="line">               arr[j]=arr[j+1];</span><br><span class="line">               arr[j+1]=temp;</span><br><span class="line">               &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p>
+<p>###对象<br>1.定义方式<br>    1.通过new Object();创建<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var teacher=new Objice();</span><br><span class="line">     teacher.name=&quot;小红&quot;;</span><br><span class="line">     teacher.sayHello=function ()&#123;</span><br><span class="line">     &#125;;//注意行为后边的分号</span><br></pre></td></tr></table></figure></p>
+<pre><code>2.通过自定义构造函数
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var teacher=new Student()//注意首字母大写</span><br><span class="line">     function Student(nane)&#123;</span><br><span class="line">       this.name=name;</span><br><span class="line">       this.xingwei=function ()&#123;&#125;;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+<pre><code>3.使用字面量的方式创建对象  只能创建一个对象
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var teacher=&#123;</span><br><span class="line">     name:&quot;&quot;，</span><br><span class="line">     age=20，</span><br><span class="line">     sayHi:function ()&#123;&#125;//因为在最后所有不写分号</span><br><span class="line">   &#125;；</span><br></pre></td></tr></table></figure>
+<p>2.访问元素<br>    teacher.name;<br>    teacher[“name”];<br>3.遍历元素  for-in<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(var i in teacher)&#123;</span><br><span class="line">    teacher[i]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p>2.全局变量：    普通的全局变量  不能使用delete来删除<br>            隐形的全局变量：不使用var声明的变量  能使用delete来删除<br>1.声明式函数<br>2.函数表达式<br>​<br>3.匿名函数<br>    自执行函数也叫自调用函数,只执行一次，为了创建作用域，保护一些重要的变量不被污染。<br>    （function(){}）()<br>    +function(){}()<br>    -function(){}()<br>    !function(){}()</p>
+<p>###面向对象</p>
+<blockquote>
+<p>将事情的关注点，放在对象上面</p>
+<p>####创建对象<br>1.使用字面量<br>    使用[]给对象添加属性，[]中不是字符串时，默认会转化为字符串<br>    var p={};<br>    p[0]<br>    p[true]<br>    p[p]相当于添加了[object　 Object]<br>2.通过构造函数的方式<br>注意：创造不同的实例所指的方法的地址不同，会占用很多的空间，所以会使用.prototype这个属性添加方法，属性值为一个对象，添加的方法可以供所有的实例访问，指向同一个地址。</p>
+<p>###函数的集中调用方式<br>1.普通函数调用  this指向Window<br>2.构造函数调用<br>3.方法调用，var o1={p:Person};<br>4.上下文调用，call</p>
+<p>###寄生继承<br>1.寄生构造函数<br>    虽然被当成构造函数调用，但是返回的不是一个实例，而是对象字面量<br>2.在方法内部创建对象，对该独享进行增强，返回一个对象，通过调用方法来实现寄生继承。</p>
+<p>###原型链</p>
+<p>###一些方法<br>删除一个属性：delete obj.name<br>1.Object.defineProperty   给对象定义一个属性</p>
+</blockquote>
+<p>.Object.defineProperty (obj,”name”,{键值对});<br>value，设置属性值<br>configurable，默认为false,是否能被删除<br>enumerable  默认为false是否可被枚举，也就是能不能被遍历该属性<br>writable 能否被赋值运算符改变数值<br>get<br>set<br>2.对象.hasOwnProperty(属性)  这个属性是否是自身的属性<br>    特例：<strong>proto</strong>  结果为false<br>3.isPrototypeOf()  判断当前对象是否是参数的原型对象，也就是<br>o1..isPrototypeOf(o2)<br>o2.<strong>proto</strong>=  o1<br>o2.<strong>proto</strong>.<strong>proto</strong>=  o1<br>4.对象.propertyIsEnumerable(属性)属性是不是可被枚举的，属性必须为自身的属性</p>
+<p>###抛出异常<br>1.throw new Error(“…”);<br>2.throw(“…”);</p>
+<p>###异常捕获<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">  可能会发生异常的代码</span><br><span class="line">&#125;catch(e)&#123;</span><br><span class="line">  异常信息处理的过程</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###函数</p>
+<ol>
+<li>定义无参的函数<br>var f=new Function(“函数体”);<br>anonymous  匿名</li>
+<li>定义有形参的函数<br>var f=new Function(参数1，参数2，“函数体”);<br>###解析json数据的方式<br>1.JSON.parse<br>2.使用var s=new Function(“return “+字符串);<br>###原型链<br>###一些其他的概念<br>1.对象的成员：对象的属性和方法<br>2.静态成员：构造函数自身内存中的属性，如Person.xxx的方式访问<br> name:”Person”<pre><code>var s1=function s2(){}
+这种name值为s1,在函数外部通过s1来访问，在函数内部，s1和s2都能访问。
+</code></pre> length:表示函数的形参的个数<pre><code>如果实参的个数&gt;形参的个数，会报错。
+注意：arguments（函数内部的局部对象） 实参的相关信息
+arguments.callee表示当前函数
+</code></pre> 函数.caller  表示当前函数是在哪个函数内部调用的，如果在全局作用域中调用，为null<br> 可以使用arguments.callee实现递归<br>3.实例成员：实例对象的属性和方法如对象.xxx访问<br>###A instanceof  函数<br>1.A对象是不是函数的实例<br>2.A对象的原型链中是否涉及到了B</li>
+</ol>
+<p>###递归<br>在函数内部自己调用自己。</p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2017/12/15/js高级总结/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/12/15/jquery总结/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/12/15/js高级-总结js/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/12/15/hello-world/">Hello World</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
